@@ -1,14 +1,13 @@
-import 'package:flutter/foundation.dart' show immutable;
-import 'package:flutter_bloc_notes_app/models.dart';
+part of 'app_bloc.dart';
 
 @immutable
-abstract class AppState {
+class AppState {
   final bool isLoading;
   final LoginErrors? loginError;
   final LoginHandle? loginHandle;
   final Iterable<Note>? fetchedNotes;
 
-  const AppState.isEmpty()
+  const AppState.initial()
       : isLoading = false,
         loginError = null,
         loginHandle = null,
