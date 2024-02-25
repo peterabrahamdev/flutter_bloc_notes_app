@@ -20,6 +20,16 @@ class LoginHandle {
   String toString() => 'LoginHandle (token = $token)';
 }
 
-enum LoginErrors {
-  invalidHandle
+enum LoginErrors { invalidHandle }
+
+@immutable
+class Note {
+  final String title;
+
+  const Note({
+    required this.title,
+  });
+
+  @override
+  String toString() => 'Note (title = $title)';
 }
