@@ -19,3 +19,7 @@ class LoginHandle {
   @override
   String toString() => 'LoginHandle (token = $token)';
 }
+
+enum LoginErrors {
+  invalidHandle
+}
