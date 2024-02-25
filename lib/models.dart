@@ -10,13 +10,13 @@ class LoginHandle {
 
   final String token;
 
-  /// Creates a new `LoginHandle` instance.
+  /// Creates a new [LoginHandle] instance.
 
   const LoginHandle({
     required this.token,
   });
 
-  /// Creates a `LoginHandle` instance with the token "foobar".
+  /// Creates a [LoginHandle] instance with the token "foobar".
 
   const LoginHandle.fooBar() : token = 'foobar';
 
@@ -30,7 +30,7 @@ class LoginHandle {
   String toString() => 'LoginHandle (token = $token)';
 }
 
-/// Represents different types of errors related to LoginHandle operations.
+/// Represents different types of errors related to [LoginHandle] operations.
 
 enum LoginErrors {
   /// Error indicating an invalid LoginHandle object.
@@ -46,7 +46,7 @@ class Note {
 
   final String title;
 
-  /// Creates a new `Note` instance.
+  /// Creates a new [Note] instance.
   
   const Note({
     required this.title,
