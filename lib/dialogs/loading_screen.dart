@@ -60,33 +60,34 @@ class LoadingScreen {
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: SingleChildScrollView(
-                    child: Column(
-                  // We need to set this in order to prevent the box from being elongated to the top and bottom of the screen.
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    const CircularProgressIndicator(),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    StreamBuilder(
-                      stream: _text.stream,
-                      builder: (context, snapshot) {
-                        if (snapshot.hasData) {
-                          return Text(
-                            snapshot.data!,
-                            textAlign: TextAlign.center,
-                          );
-                        } else {
-                          return Container();
-                        }
-                      },
-                    ),
-                  ],
-                )),
+                  child: Column(
+                    // We need to set this in order to prevent the box from being elongated to the top and bottom of the screen.
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      const CircularProgressIndicator(),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      StreamBuilder(
+                        stream: _text.stream,
+                        builder: (context, snapshot) {
+                          if (snapshot.hasData) {
+                            return Text(
+                              snapshot.data!,
+                              textAlign: TextAlign.center,
+                            );
+                          } else {
+                            return Container();
+                          }
+                        },
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ),
           ),

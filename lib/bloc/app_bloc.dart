@@ -3,7 +3,6 @@ import 'package:flutter/foundation.dart' show immutable;
 import 'package:flutter_bloc_notes_app/apis/login_api.dart';
 import 'package:flutter_bloc_notes_app/apis/notes_api.dart';
 import 'package:flutter_bloc_notes_app/models.dart';
-import 'package:flutter_bloc_notes_app/strings.dart';
 
 part 'app_event.dart';
 part 'app_state.dart';
