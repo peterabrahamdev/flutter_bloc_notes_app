@@ -20,7 +20,7 @@ typedef DialogOptionBuilder<T> = Map<String, T?> Function();
   return showDialog<T?>(
     context: context,
     builder: (context) {
-      return AlertDialog(
+      return AlertDialog.adaptive(
         title: Text(title),
         content: Text(content),
         actions: options.keys.map((optionTitle) {

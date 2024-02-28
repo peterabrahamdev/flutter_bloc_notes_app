@@ -34,7 +34,7 @@ class AppBloc extends Bloc<AppEvent, AppState> {
 
       emit(
         AppState(
-          isLoading: true,
+          isLoading: false,
           fetchedNotes: null,
           loginError: loginHandle == null ? LoginErrors.invalidHandle : null,
           loginHandle: loginHandle,
